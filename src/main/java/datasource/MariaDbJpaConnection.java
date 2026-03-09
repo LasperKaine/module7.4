@@ -12,7 +12,7 @@ public class MariaDbJpaConnection {
     public static EntityManager getInstance() {
         if (em == null) {
             if (emf == null) {
-                emf = Persistence.createEntityManagerFactory("CurrencyPU");
+                emf = Persistence.createEntityManagerFactory("CurrencyUnit");
             }
             em = emf.createEntityManager();
         }
